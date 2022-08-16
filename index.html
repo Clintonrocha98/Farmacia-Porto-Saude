@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho IFBA</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <div class="pag-1">
+      <div class="menu on">
+        <button class="btn-1">Cadastrar</button>
+        <button class="btn-2">Efetuar Venda</button>
+        <button class="btn-3">Devolver medicamentos ao Laboratorio</button>
+        <button class="btn-4">Atualizar preços</button>
+        <button class="btn-5">relatório de Estoque</button>
+      </div>
+
+      <div class="choose-registration off">
+        <button class="Cliente">Cadastro Cliente</button>
+        <button class="Medicamento">Cadastro Medicamento</button>
+      </div>
+
+      <div class="cad-cliente off">
+
+      <label for="nome-cliente">Nome:</label>
+      <input type="text" class="nome-cliente">
+
+      <label for="cpf-cliente">CPF:</label>
+      <input type="text" class="cpf-cliente">
+
+      <div class="warrap-button">
+        <button class="btn_voltar1"> Voltar ao Menu </button>
+        <button class="add-cliente"> Adicionar </button>
+      </div>
+      </div>
+
+      <div class="cad-remedio off">
+
+        <label for="cod-remedio">Codigo do remedio:</label>
+        <input type="text" class="cod-remedio">
+
+        <label for="nome-remedio">Nome:</label>
+        <input type="text" class="nome-cliente">
+
+        <label for="quantidade-remedio">Quantidade:</label>
+        <input type="text" class="quantidade-remedio">
+
+        <label for="preco-remedio">Preço:</label>
+        <input type="text" class="preco-remedio">
+
+        <label for="descricao-remedio">Descrição:</label>
+        <textarea name="descricao-remedio" class="descricao-remedio" cols="30" rows="10"></textarea>
+
+        <div class="warrap-button">
+          <button class="btn_voltar2"> Voltar ao Menu </button>
+          <button> Proximo </button>
+        </div>
+
+      </div>
+
+      <div class="venda">
+      <label for="venda-nome-remedio">Nome do remedio:</label>
+      <input type="text" class="venda-remedio">
+
+      <label for="venda-quantidade">Quantidade:</label>
+      <input type="text" class="venda-quantidade">
+
+      <div class="warrap-button">
+        <button> Menu </button>
+        <button> Proximo </button>
+      </div>
+      </div>
+    
+
+    </div>
+
+  
+</body>
+<script src="js/cadastro-cliente.js"defer></script>
+<script src="js/nav-pag.js"defer></script>
+</html>
