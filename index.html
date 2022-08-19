@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho IFBA</title>
+
     <link rel="stylesheet" href="css/styles.css">
+
+    <script type="module"src="js/cadastro-cliente-remedio.js"defer></script>
+    <script type="module" src="js/nav-pag.js"defer></script>
 
 </head>
 <body>
@@ -24,16 +28,16 @@
 
       <div class="cad-cliente off">
 
-      <label for="nome-cliente">Nome:</label>
-      <input type="text" class="nome-cliente">
+        <label for="nome-cliente">Nome:</label>
+        <input type="text" class="nome-cliente">
 
-      <label for="cpf-cliente">CPF:</label>
-      <input type="text" class="cpf-cliente">
+        <label for="cpf-cliente">CPF:</label>
+        <input type="text" class="cpf-cliente">
 
-      <div class="warrap-button">
-        <button class="btn_voltar1"> Voltar ao Menu </button>
-        <button class="add-cliente"> Adicionar </button>
-      </div>
+        <div class="warrap-button">
+          <button class="btn-voltar1"> Voltar ao Menu </button>
+          <button class="add-cliente"> Cadastrar </button>
+        </div>
       </div>
 
       <div class="cad-remedio off">
@@ -42,7 +46,7 @@
         <input type="text" class="cod-remedio">
 
         <label for="nome-remedio">Nome:</label>
-        <input type="text" class="nome-cliente">
+        <input type="text" class="nome-remedio">
 
         <label for="quantidade-remedio">Quantidade:</label>
         <input type="text" class="quantidade-remedio">
@@ -54,8 +58,8 @@
         <textarea name="descricao-remedio" class="descricao-remedio" cols="30" rows="10"></textarea>
 
         <div class="warrap-button">
-          <button class="btn_voltar2"> Voltar ao Menu </button>
-          <button> Proximo </button>
+          <button class="btn-voltar2"> Voltar ao Menu </button>
+          <button class="add-remedio"> Cadastrar </button>
         </div>
 
       </div>
@@ -78,6 +82,5 @@
 
   
 </body>
-<script src="js/cadastro-cliente.js"defer></script>
-<script src="js/nav-pag.js"defer></script>
+
 </html>
