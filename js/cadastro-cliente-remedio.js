@@ -23,7 +23,10 @@ btn_add_cliente.addEventListener('click',()=>{
         cliente[cont] = [nome,cpf]
         cont++
         flag=true
+        document.querySelector('.nome-cliente').value = ''
+        document.querySelector('.cpf-cliente').value = ''
     }
+    console.log(cliente)
 
 })
 
@@ -35,24 +38,27 @@ btn_add_remedio.addEventListener('click',()=>{
     let preco = document.querySelector('.preco-remedio').value
     let descricao = document.querySelector('.descricao-remedio').value
     
-    if(
-        codigo.length &
-        nome_remedio.length &
-        qtd.length &
-        preco.length &
-        descricao.length
-        )
-        {
-        remedio[cont2] = [
+    if(   codigo.length & nome_remedio.length 
+        & qtd.length & preco.length
+        & descricao.length){
+        remedio[cont2] = 
+        [
             codigo,
             nome_remedio,
             qtd,
             preco,
             descricao
         ]
-        cont2++
-        flag = true
         
+        cont2++
+
+        flag = true
+
+        document.querySelector('.cod-remedio').value= ''
+        document.querySelector('.nome-remedio').value= ''
+        document.querySelector('.quantidade-remedio').value= ''
+        document.querySelector('.preco-remedio').value= ''
+        document.querySelector('.descricao-remedio').value= ''
     }
     
 })
