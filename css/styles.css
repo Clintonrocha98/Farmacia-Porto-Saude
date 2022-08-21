@@ -235,18 +235,17 @@ button {
   display: none;
 }
 
-.venda {
-  display: none;
+.pag-venda {
   flex-direction: column;
 }
-.venda input {
+.pag-venda input {
   margin-bottom: 20px;
 }
-.venda .warrap-button {
+.pag-venda .warrap-button {
   display: flex;
   flex-direction: column;
 }
-.venda button {
+.pag-venda button {
   margin: 20px;
   padding: 1.3em 3em;
   font-size: 12px;
@@ -262,14 +261,22 @@ button {
   cursor: pointer;
   outline: none;
 }
-.venda button:hover {
+.pag-venda button:hover {
   background-color: #23c483;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
-.venda button:active {
+.pag-venda button:active {
   transform: translateY(-1px);
+}
+
+.pag-venda on {
+  display: flex;
+}
+
+.pag-venda off {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

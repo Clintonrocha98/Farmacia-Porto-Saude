@@ -1,7 +1,7 @@
 import {cadastro_cliente,cadastro_medicamento} from './cadastro-cliente-remedio.js';
 
 const btn_1 = document.querySelector('.btn-1')
-// const btn_2 = document.querySelector('.btn-2')
+const btn_2 = document.querySelector('.btn-2')
 // const btn_3 = document.querySelector('.btn-3')
 // const btn_4 = document.querySelector('.btn-4')
 // const btn_5 = document.querySelector('.btn-5')
@@ -14,6 +14,7 @@ const menu = document.querySelector('.menu')
 const op_cad_menu = document.querySelector('.choose-registration')
 const op_cad_cliente = document.querySelector('.Cliente')
 const op_cad_medicamento = document.querySelector('.Medicamento')
+const pag_vender = document.querySelector('.pag-venda')
 
 function add_remove_menu(){
     if(menu.classList[1] == "on"){
@@ -36,11 +37,27 @@ function op_cadastro(){
         op_cad_menu.classList.remove('on')
     }
 }
+function vender(){
+    if(pag_vender.classList[1] == "off"){
+        pag_vender.classList.add('on')
+        pag_vender.classList.remove('off')
+    }
+    else{
+        pag_vender.classList.add('off')
+        pag_vender.classList.remove('on')
+    }
+}
 
 btn_1.addEventListener('click',()=>{
     add_remove_menu()
     
     op_cadastro()
+})
+
+btn_2.addEventListener('click',()=>{
+    add_remove_menu()
+    
+    vender()
 })
 op_cad_cliente.addEventListener('click',()=>{
 
