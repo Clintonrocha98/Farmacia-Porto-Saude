@@ -59,6 +59,57 @@ button {
   height: 100vh;
   width: 100%;
   background-color: rgb(81, 149, 89);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: LightGreen;
+}
+.pag-1 .warrap-button {
+  display: flex;
+  flex-direction: column;
+}
+.pag-1 button {
+  margin: 20px;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: Indigo;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.pag-1 button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.pag-1 button:active {
+  transform: translateY(-1px);
+}
+.pag-1 input, .pag-1 textarea {
+  font-weight: 500;
+  font-size: 0.8vw;
+  color: #fff;
+  background-color: DarkGreen;
+  box-shadow: 0 0 0.4vw rgba(0, 0, 0, 0.5), 0 0 0 0.15vw transparent;
+  border-radius: 0.4vw;
+  border: none;
+  outline: none;
+  padding: 0.5vw;
+  transition: 0.4s;
+  margin-top: 5px;
+}
+.pag-1 input:hover, .pag-1 textarea:hover {
+  box-shadow: 0 0 0 0.15vw rgba(135, 207, 235, 0.186);
+}
+.pag-1 input:focus, .pag-1 textarea:focus {
+  box-shadow: 0 0 0 0.15vw Lime;
 }
 
 .menu {
@@ -78,66 +129,6 @@ button {
   display: none;
 }
 
-.menu .warrap-button {
-  display: flex;
-  flex-direction: column;
-}
-.menu button {
-  margin: 20px;
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-}
-.menu button:hover {
-  background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-.menu button:active {
-  transform: translateY(-1px);
-}
-
-.choose-registration .warrap-button {
-  display: flex;
-  flex-direction: column;
-}
-.choose-registration button {
-  margin: 20px;
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-}
-.choose-registration button:hover {
-  background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-.choose-registration button:active {
-  transform: translateY(-1px);
-}
-
 .on {
   display: flex;
 }
@@ -152,35 +143,6 @@ button {
 .cad-cliente input {
   margin-bottom: 20px;
 }
-.cad-cliente .warrap-button {
-  display: flex;
-  flex-direction: column;
-}
-.cad-cliente button {
-  margin: 20px;
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-}
-.cad-cliente button:hover {
-  background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-.cad-cliente button:active {
-  transform: translateY(-1px);
-}
 
 .on {
   display: flex;
@@ -191,40 +153,10 @@ button {
 }
 
 .cad-remedio {
-  display: none;
   flex-direction: column;
 }
 .cad-remedio input {
   margin-bottom: 20px;
-}
-.cad-remedio .warrap-button {
-  display: flex;
-  flex-direction: column;
-}
-.cad-remedio button {
-  margin: 20px;
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-}
-.cad-remedio button:hover {
-  background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-.cad-remedio button:active {
-  transform: translateY(-1px);
 }
 
 .on {
@@ -240,35 +172,6 @@ button {
 }
 .pag-venda input {
   margin-bottom: 20px;
-}
-.pag-venda .warrap-button {
-  display: flex;
-  flex-direction: column;
-}
-.pag-venda button {
-  margin: 20px;
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-}
-.pag-venda button:hover {
-  background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-.pag-venda button:active {
-  transform: translateY(-1px);
 }
 
 .pag-venda on {
