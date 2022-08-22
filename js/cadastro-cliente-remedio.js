@@ -38,7 +38,7 @@ btn_add_remedio.addEventListener('click',()=>{
     let preco = document.querySelector('.preco-remedio').value
     let descricao = document.querySelector('.descricao-remedio').value
     
-    if(   codigo.length & nome_remedio.length 
+    if(codigo.length & nome_remedio.length 
         & qtd.length & preco.length
         & descricao.length){
         remedio[cont2] = 

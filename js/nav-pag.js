@@ -8,6 +8,7 @@ const btn_2 = document.querySelector('.btn-2')
 
 const btn_voltar1 = document.querySelector('.btn-voltar1')
 const btn_voltar2 = document.querySelector('.btn-voltar2')
+const btn_voltar3 = document.querySelector('.btn-voltar3')
 
 const menu = document.querySelector('.menu')
 
@@ -90,8 +91,8 @@ btn_voltar1.addEventListener('click',()=>{
 btn_voltar2.addEventListener('click',()=>{
     voltar_menu(cadastro_medicamento)
 })
-
-
-
-
+btn_voltar3.addEventListener('click',()=>{
+    vender()
+    add_remove_menu()
+})
 
