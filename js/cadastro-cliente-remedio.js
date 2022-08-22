@@ -10,10 +10,10 @@ const add_remedio = document.querySelector('.add-remedio')
 var flag = false
 
 let cliente = []
-let remedio = []
+export let remedio = []
 
 let cont = 0
-let cont2 = 0
+export let cont2 = 0
 
 btn_add_cliente.addEventListener('click',()=>{
     let nome = document.querySelector('.nome-cliente').value
@@ -26,7 +26,6 @@ btn_add_cliente.addEventListener('click',()=>{
         document.querySelector('.nome-cliente').value = ''
         document.querySelector('.cpf-cliente').value = ''
     }
-    console.log(cliente)
 
 })
 
@@ -45,7 +44,7 @@ btn_add_remedio.addEventListener('click',()=>{
         [
             codigo,
             nome_remedio,
-            qtd,
+            Number(qtd),
             preco,
             descricao
         ]
